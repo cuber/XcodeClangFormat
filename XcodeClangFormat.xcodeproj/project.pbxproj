@@ -93,9 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D39E1C256FB274006D2241 /* XcodeKit.framework in Frameworks */,
-				55BCFFFA1D80170F000EDB05 /* libcurses.tbd in Frameworks */,
 				559B24101D7EBDC400937AB3 /* Cocoa.framework in Frameworks */,
+				55BCFFFA1D80170F000EDB05 /* libcurses.tbd in Frameworks */,
+				86D39E1C256FB274006D2241 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +229,7 @@
 				TargetAttributes = {
 					559B23DD1D7EBDA300937AB3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WD7AGDRKWF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -241,6 +242,7 @@
 					};
 					559B240E1D7EBDC400937AB3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WD7AGDRKWF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -441,11 +443,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
+				ARCHS = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XcodeClangFormat/XcodeClangFormat.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XcodeClangFormat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -459,11 +462,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
+				ARCHS = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XcodeClangFormat/XcodeClangFormat.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XcodeClangFormat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -477,17 +481,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
+				ARCHS = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "clang-format/clang_format.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "clang-format/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -523,12 +528,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
+				ARCHS = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "clang-format/clang_format.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -575,7 +581,7 @@
 				559B23EE1D7EBDA300937AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		559B23EF1D7EBDA300937AB3 /* Build configuration list for PBXNativeTarget "XcodeClangFormat" */ = {
 			isa = XCConfigurationList;
@@ -584,7 +590,7 @@
 				559B23F11D7EBDA300937AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		559B241E1D7EBDC400937AB3 /* Build configuration list for PBXNativeTarget "clang-format" */ = {
 			isa = XCConfigurationList;
@@ -593,7 +599,7 @@
 				559B24201D7EBDC400937AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
