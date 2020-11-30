@@ -238,7 +238,7 @@ NSString* kFormatFileCommandIdentifier = [NSString stringWithFormat:@"%@.FormatF
         if (*start_it > start) {
             --start_it;
         }
-        if (*end_it > end) {
+        if (*end_it >= end) {
             --end_it;
         }
 
