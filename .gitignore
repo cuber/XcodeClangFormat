@@ -1,3 +1,5 @@
 xcuserdata
 /config.xcconfig
 /deps
+DerivedData/
+build/

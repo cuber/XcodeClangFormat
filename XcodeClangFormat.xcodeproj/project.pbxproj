@@ -16,6 +16,8 @@
 		559B24191D7EBDC400937AB3 /* ClangFormatCommand.mm in Sources */ = {isa = PBXBuildFile; fileRef = 559B24181D7EBDC400937AB3 /* ClangFormatCommand.mm */; };
 		559B241D1D7EBDC400937AB3 /* clang-format.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 559B240F1D7EBDC400937AB3 /* clang-format.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55BCFFFA1D80170F000EDB05 /* libcurses.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 557D38B71D7F270E00708269 /* libcurses.tbd */; };
+		868C5E602AFB2FA800CD0CED /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868C5E5F2AFB2FA800CD0CED /* XcodeKit.framework */; };
+		868C5E612AFB2FA800CD0CED /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 868C5E5F2AFB2FA800CD0CED /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,17 @@
 				559B241D1D7EBDC400937AB3 /* clang-format.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868C5E622AFB2FA800CD0CED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				868C5E612AFB2FA800CD0CED /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -63,6 +76,7 @@
 		559B241A1D7EBDC400937AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55BCFFF71D801362000EDB05 /* config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
 		55C8203F1D87F81300006D07 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		868C5E5F2AFB2FA800CD0CED /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868C5E602AFB2FA800CD0CED /* XcodeKit.framework in Frameworks */,
 				55BCFFFA1D80170F000EDB05 /* libcurses.tbd in Frameworks */,
 				559B24101D7EBDC400937AB3 /* Cocoa.framework in Frameworks */,
 			);
@@ -131,6 +146,7 @@
 		559B23F71D7EBDB700937AB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				868C5E5F2AFB2FA800CD0CED /* XcodeKit.framework */,
 				557D38B71D7F270E00708269 /* libcurses.tbd */,
 				559B23F81D7EBDB700937AB3 /* Cocoa.framework */,
 			);
@@ -188,6 +204,7 @@
 				559B240B1D7EBDC400937AB3 /* Sources */,
 				559B240C1D7EBDC400937AB3 /* Frameworks */,
 				559B240D1D7EBDC400937AB3 /* Resources */,
+				868C5E622AFB2FA800CD0CED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +226,7 @@
 				TargetAttributes = {
 					559B23DD1D7EBDA300937AB3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WD7AGDRKWF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -221,6 +239,7 @@
 					};
 					559B240E1D7EBDC400937AB3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WD7AGDRKWF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -423,9 +442,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XcodeClangFormat/XcodeClangFormat.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = XcodeClangFormat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.2.1;
@@ -441,9 +462,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XcodeClangFormat/XcodeClangFormat.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = XcodeClangFormat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MARKETING_VERSION = 1.2.1;
@@ -458,10 +481,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "clang-format/clang_format.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -503,10 +528,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "clang-format/clang_format.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WD7AGDRKWF;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
