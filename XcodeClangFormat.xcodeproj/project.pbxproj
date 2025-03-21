@@ -382,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -433,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -443,7 +443,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
-				ARCHS = x86_64;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XcodeClangFormat/XcodeClangFormat.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -462,7 +462,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
-				ARCHS = x86_64;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = XcodeClangFormat/XcodeClangFormat.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -481,7 +481,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
-				ARCHS = x86_64;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "clang-format/clang_format.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -496,7 +496,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "clang-format/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.2.1;
 				OTHER_CPLUSPLUSFLAGS = (
 					"--system-header-prefix=$(LLVM_INCLUDE_DIR)",
@@ -516,6 +516,15 @@
 					"$(LLVM_LIBDIR)/libLLVMDemangle.a",
 					"$(LLVM_LIBDIR)/libLLVMRemarks.a",
 					"$(LLVM_LIBDIR)/libLLVMBitstreamReader.a",
+					"$(LLVM_LIBDIR)/libLLVMTarget.a",
+					"$(LLVM_LIBDIR)/libLLVMTargetParser.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUAsmParser.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUCodeGen.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUDesc.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUDisassembler.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUInfo.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUTargetMCA.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUUtils.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mapbox.XcodeClangFormat.clang-format";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,7 +537,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55BCFFF71D801362000EDB05 /* config.xcconfig */;
 			buildSettings = {
-				ARCHS = x86_64;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "clang-format/clang_format.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -543,7 +552,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "clang-format/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.2.1;
 				OTHER_CPLUSPLUSFLAGS = (
 					"--system-header-prefix=$(LLVM_INCLUDE_DIR)",
@@ -563,6 +572,15 @@
 					"$(LLVM_LIBDIR)/libLLVMDemangle.a",
 					"$(LLVM_LIBDIR)/libLLVMRemarks.a",
 					"$(LLVM_LIBDIR)/libLLVMBitstreamReader.a",
+					"$(LLVM_LIBDIR)/libLLVMTarget.a",
+					"$(LLVM_LIBDIR)/libLLVMTargetParser.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUAsmParser.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUCodeGen.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUDesc.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUDisassembler.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUInfo.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUTargetMCA.a",
+					"$(LLVM_LIBDIR)/libLLVMAMDGPUUtils.a",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mapbox.XcodeClangFormat.clang-format";
 				PRODUCT_NAME = "$(TARGET_NAME)";

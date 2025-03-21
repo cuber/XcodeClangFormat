@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "brew install llvm instead"
+exit 1
+
 set -e
 set -o pipefail
 set -u

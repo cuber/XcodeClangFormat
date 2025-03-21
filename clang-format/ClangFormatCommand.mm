@@ -203,7 +203,7 @@ NSString* kFormatFileCommandIdentifier = [NSString stringWithFormat:@"%@.FormatF
     // Calculated replacements and apply them to the input buffer.
     const llvm::StringRef filename("<stdin>");
     clang::format::FormattingAttemptStatus status;
-    auto replaces = clang::format::reformat(format.GetLanguageStyle(language).getValueOr(format), code, ranges, filename, &status);
+    auto replaces = clang::format::reformat(format.GetLanguageStyle(language).value_or(format), code, ranges, filename, &status);
 
     if (!status.FormatComplete) {
         // We could not apply the calculated replacements.
